@@ -1,0 +1,112 @@
+:root {
+   --main-bg-color: hsl(29, 53%, 90%);
+   --bg-overlay: rgb(255 242 250 / 60%);
+
+   --h3-color: #812d50;
+   --h2-color: #7c412f;
+}
+
+@font-face {
+   font-family: "Outfit";
+   src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+      format("truetype");
+   font-weight: 100 900;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "YoungSerif";
+   src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+   font-weight: 100 900;
+   font-style: normal;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   background-color: var(--main-bg-color);
+   font-family: Outfit, Arial, Helvetica, sans-serif;
+   font-size: 32px;
+}
+
+h1,
+h2 {
+   font-family:
+      YoungSerif, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+h1 {
+   font-size: 2.5rem;
+   padding: 56px 0 29px;
+}
+
+h2 {
+   color: var(--h2-color);
+   font-size: 1.7rem;
+   letter-spacing: 0.7px;
+}
+
+h3 {
+   color: var(--h3-color);
+   font-weight: 550;
+   letter-spacing: 1.4px;
+   margin-bottom: 1rem;
+}
+p {
+   line-height: 1.5;
+}
+
+span {
+   font-weight: bold;
+}
+
+ul,
+ol {
+   padding-left: 1rem;
+   list-style: none;
+}
+
+li {
+   position: relative;
+   padding-left: 1.45rem;
+   margin-bottom: 0.73rem;
+}
+li::before {
+   content: "●";
+   position: absolute;
+   left: -19px;
+   top: 5px;
+   font-size: 0.6rem;
+}
+
+li:last-child {
+   margin-bottom: 5px;
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   padding: 252px 704px;
+}
+
+.container {
+   background-color: white;
+   height: 100%;
+   border-radius: 45px;
+   padding: 81px;
+
+   img {
+      width: 100%;
+      border-radius: 20px;
+   }
+
+   .details {
+      background-color: var(--bg-overlay);
+      margin: 63px 0px 55px;
+      padding: 53px 56px;
+      border-radius: 20px;
+   }
+}
