@@ -180,3 +180,43 @@ body {
       margin-top: 2rem;
    }
 }
+
+@media (max-width: 1250px) {
+   body {
+      padding: 0;
+      text-align: start;
+   }
+   .container {
+      border-radius: 0;
+      padding: 182px 2rem 2rem 1.9rem;
+
+      img {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         border-radius: 0;
+      }
+      .details {
+         margin-top: 1.7rem;
+         padding-left: 1.6rem;
+         margin-bottom: 1.4rem;
+      }
+   }
+
+   h1 {
+      font-size: 2.2rem;
+      letter-spacing: 0.5px;
+      line-height: 1.05;
+      margin-bottom: 0.5rem;
+   }
+
+   li {
+      line-height: 1.5rem;
+      margin-bottom: 0.5rem;
+   }
+
+   hr {
+      margin: 2rem 0 1.5rem;
+   }
+}
